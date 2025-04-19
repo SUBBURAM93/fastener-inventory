@@ -1,0 +1,25 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Update Fastener Inventory</title>
+</head>
+<body>
+  <h1>Fastener Inventory Update</h1>
+  <p id="part-info"></p>
+  <label for="qty">New Quantity:</label>
+  <input type="number" id="qty" />
+  <button onclick="updateQty()">Submit</button>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const part = urlParams.get('part');
+    document.getElementById('part-info').textContent = `Updating: ${part}`;
+
+    function updateQty() {
+      const qty = document.getElementById('qty').value;
+      alert(`Updated ${part} with quantity: ${qty}`);
+      // You can send this to Google Sheets or API here.
+    }
+  </script>
+</body>
+</html>
