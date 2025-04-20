@@ -1,0 +1,12 @@
+[
+  {
+    "PartNumber": "FST001",
+    "Description": "M8 Bolt",
+    "Quantity": 120
+  },
+  {
+    "PartNumber": "FST002",
+    "Description": "M10 Nut",
+    "Quantity": 75
+  }
+]
